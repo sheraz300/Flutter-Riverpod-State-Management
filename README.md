@@ -1,4 +1,4 @@
-# Flutter-Riverbed-State-Management
+# Flutter-Riverpod-State-Management
 
 A new Flutter project built with Riverpod for state management, using `flutter_dotenv` for managing environment variables securely, and `http` for fetching data from an external API. This application fetches stock price data using the Alpha Vantage API as an example of using global state with Riverpod.
 
