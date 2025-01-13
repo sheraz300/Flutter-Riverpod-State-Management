@@ -12,12 +12,10 @@ class StockApiClient {
     if (apiKey == null) {
       throw Exception('API key is not set in .env');
     }
-
     final response = await httpClient.get(
       Uri.parse(
           'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=$symbol&interval=5min&apikey=$apiKey'),
     );
-
     if (response.statusCode == 200) {
       final Map<String, dynamic> data = jsonDecode(response.body);
       return data;

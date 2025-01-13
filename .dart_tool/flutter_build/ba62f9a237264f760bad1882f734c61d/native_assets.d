@@ -1,0 +1,1 @@
+ /Users/apple/Documents/GitHub/Flutter-Riverpod-State-Management/.dart_tool/flutter_build/ba62f9a237264f760bad1882f734c61d/native_assets.yaml: 

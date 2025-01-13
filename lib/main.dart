@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/src/features/Stock%20Price%20Screen/presentation/pages/stock_price_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 void main() async {
-  await dotenv.load();
+  await dotenv.load(fileName: '.env');
   runApp(ProviderScope(child: MyApp()));
 }
 
@@ -13,9 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Riverpod Stock Price',
       theme: ThemeData(primarySwatch: Colors.blue),
-      // home: StockPriceScreen(),
+      home: StockPricePage(),
     );
   }
 }
